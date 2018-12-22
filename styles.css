@@ -1,0 +1,124 @@
+body{
+  margin-top: 150px;
+  text-align: center;
+  background-color: white;
+  background-image: url(https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80);
+  background-position: center;
+}
+
+.score{
+  color: white;
+  font-family: fantasy;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-right: 50px;
+
+}
+
+.scoreLine {
+  display: inline-block;
+  padding: 10px;
+
+}
+ .btn{
+  text-align: center;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  margin-right: 10px;
+ }
+
+#rock{
+background-color: white;
+background-image: url(https://www.textureking.com/content/img/stock/big/DSC_4271.JPG);
+background-position: center;
+background-size: cover;
+color:black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-weight: bold;
+font-size: 50px;
+border: none;
+}
+#rock:hover{
+  background-image: none;
+  background-color: transparent;
+  color:white;
+}
+
+#paper{
+  background-color: white;
+  background-image: url(https://image.freepik.com/free-vector/wrinkled-paper-texture_1100-12.jpg);
+  background-position: center;
+  background-size: cover;
+  color:black;
+  padding: 15px 32px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  border: none;
+}
+#paper:hover{
+  background-image: none;
+  background-color: transparent;
+  color:white;
+}
+
+#scissors{
+  background-color: white;
+  background-image: url(https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/scratched-and-scraped-metal-texture-6-780x585.jpg);
+  background-position: center;
+  background-size: cover;
+  color:black;
+  padding: 15px 32px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  border: none;
+
+}
+#scissors:hover{
+  background-image: none;
+  background-color: transparent;
+  color:white;
+}
+
+#reset{
+  background-color: white;
+  color:black;
+  padding: 15px 3em;
+  text-align: center;
+  position: relative;
+  right: 48px;
+}
+
+#allButtons{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+#score {
+    margin-left: 400px;
+}
+
+#message {
+    margin-top: 0;
+}
+
+.finalMessage {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: fantasy;
+  position: relative;
+  right: 45px;
+  top: 10px
+}
