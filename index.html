@@ -1,116 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RO Sham Bo!</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <div class ='score'>
+      <div class ='scoreLine'>
+         <span>Player Score:</span>
+         <div class='score' id="player">0</div>
+      </div>
+      <div class = 'scoreLine'>
+         <span>Computer Score:</span>
+         <div class='score' id="computer">0</div>
+      </div>
+      <br>
+      <div class = 'scoreLine'>
+          <div class='score' id='message'>Let's Play!</div>
+      </div>
+  </div>
+  <div id= 'allButtons'>
+    <div class = 'buttons'>
+    <button class="btn" id="rock">ROCK</button>
+    <button class="btn" id="paper">PAPER</button>
+    <button class="btn" id="scissors">SCISSORS</button>
+  </div>
+    <br>
+    <button class="resetBtn" id="reset">END</button>
+  </div>
+  <div class = "finalMessage"></div>
 
+<script type="text/javascript" src="myscript.js"></script>
 
-  <script>
-
-    var playerScore = 0;
-    var computerScore = 0;
-
-    function computerPlay()
-    {
-      //function returns either 'Rock','Paper',or 'Sicssors'.
-      var randomNum = Math.floor(Math.random() * 3) + 1;
-      switch (randomNum)
-      {
-        case 1:
-          return "ROCK";
-          break;
-
-        case 2:
-          return "PAPER";
-          break;
-
-        case 3:
-          return "SICSSORS";
-          break;
-
-        default:
-          return "Something went wrong";
-        }
-    }
-
-    function playRound(playerSelection, computerSelection)
-      {
-        switch(playerSelection)
-        {
-          case 'ROCK':
-            if(computerSelection == 'PAPER'){
-              computerScore++;
-              return 'Paper Wins!';
-            }
-            else if(computerSelection == 'ROCK'){
-              return 'It\'s a TIE!';
-            }
-            else if(computerSelection == 'SICSSORS'){
-              playerScore++
-              return 'Rock Wins!';
-            }
-            case 'PAPER':
-              if(computerSelection == 'PAPER'){
-                return 'It\'s a TIE!';
-              }
-              else if(computerSelection == 'ROCK'){
-                playerScore++
-                return 'Paper Wins!';
-              }
-              else if(computerSelection == 'SICSSORS'){
-                computerScore++
-                return 'Sicssors Wins!';
-              }
-
-            case 'SICSSORS':
-              if(computerSelection == 'SICSSORS'){
-                return 'It\'s a TIE!';
-              }
-              else if(computerSelection == 'ROCK'){
-                computerScore++
-                return 'Rock Wins!!';
-              }
-              else if(computerSelection == 'PAPER'){
-                playerScore++
-                return 'Sicssors Wins!';
-              }
-
-              default:
-                return 'Boooo! Play by the rules!'
-        }
-      }
-
-    function game(){
-      for(i = 0; i < 5; i++){
-
-        const playerSelection = prompt('Row Sham Bow!').toUpperCase();
-        const computerSelection = computerPlay();
-
-        console.log(playRound(playerSelection, computerSelection));
-        console.log(`Player: ${playerScore}, Computer: ${computerScore}`);
-      }
-
-    }
-
-    function finalscore(){
-      if(playerScore > computerScore){
-        console.log('You Won!')
-      }
-      else if(playerScore == computerScore){
-        console.log('It\'s a Tie!')
-      }
-      else{
-        console.log('You Lose!');
-      }
-
-    }
-
-    game();
-    finalscore();
-
-
-  </script>
   </body>
-</html>
+  </html>
